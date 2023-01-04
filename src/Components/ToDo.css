@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: url(../images/bg-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.child-container {
+    background-color: rgb(44, 55, 63);
+    width: 440px;
+    height: 650px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 6px 30px 3px #e8e8e8;
+    margin-top: 30px;
+}
+
+.H1 {
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+}
+
+input {
+    /* display: block; */
+    /* min-width: 3px; */
+    width: 320px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-right: 15px;
+    color: rgb(58, 57, 57);
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.todo-btn {
+    margin-right: 20px;
+    width: 5px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.buttonplus {
+    margin-top: 10px;
+    height: 50px;
+    width: 45px;
+    border-radius: 5px;
+
+}
+
+.fa {
+    margin-left: 20px;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 10;
+    background-color: #fff;
+    color: #666;
+    /* background-image: none; */
+    transition: color 0.15s linear;
+    font-size: 20px;
+}
+
+.fa-plus:before {
+    content: "\f067";
+    font-size: 20px;
+}
+
+.showItems {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.eachItem {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* margin-left: 10px; */
+    min-width: 40px;
+    word-break: break-word;
+    background: rgb(85, 41, 220);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eachItem:hover {
+    background: rgb(249, 249, 252);
+    color: rgb(85, 41, 220);
+}
+
+.showItems .eachItem h3 {
+    /* padding-left: 1px; */
+    font-size: 18px;
+    /* color: #fff; */
+}
+
+.fa-trash-alt,
+.fa-edit {
+    /* margin-left: -2.5px; */
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    transition: color 0.15s linear;
+    font-size: 20px;
+}
+
+
+.fa-edit {
+    margin-right: 7px;
+}
